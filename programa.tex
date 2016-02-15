@@ -1,0 +1,505 @@
+\documentclass[spanish]{article}
+
+%M\'argenes piolas
+\addtolength{\oddsidemargin}{-.5in}
+\addtolength{\evensidemargin}{-.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1in}
+
+\usepackage[T1]{fontenc}
+
+\usepackage{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsfonts}
+\usepackage{amsmath,amssymb}
+\usepackage[shortlabels]{enumitem}
+\usepackage{mathrsfs}
+\usepackage{hyperref}
+\hypersetup{
+      colorlinks,
+      citecolor=black,
+      filecolor=black,
+      linkcolor=black,
+      urlcolor=black
+}
+\usepackage{xcolor}
+
+%no section numbering
+\setcounter{secnumdepth}{0}
+
+\newcommand{\RR}{\mathbb{R}}
+
+
+%% README:
+%% Traduccion de lo programas de las materias de Matematica y Computacion de la UBA
+%% Es probable que esto contenga errores. Tambien falta calculo numerico para matematicos.
+
+\begin{document}
+
+\section{General remarks}
+\begin{itemize}
+  \item
+  The recommended bibliography of the courses usually contains four or five books
+  but I include only the ones that I consulted during the course.
+
+  \item
+  ``Chapters $x$ to $y$'' means that chapter $y$ is included.
+
+  \item
+  Computer Science courses usually require one or more projects in which the student
+  applies techniques and implements the algorithms studied in the course.
+
+  \item
+  All the Computer Science courses offer course notes.
+
+  \item
+  The outlines of Computer Science courses are much more succinct, since this is
+  how they are presented in the official study plans.
+
+  \item
+  I had to manually translate the outlines, so in this sense they are not
+  official.
+\end{itemize}
+
+\section{Department of Computer Science -- required courses}
+
+\subsection{Probability and Statistics [Computer Science]}
+No projects.
+
+\subsubsection{Objectives}
+Introduce the basic concepts in probability theory and statistics
+
+\subsubsection{Contents}
+Descriptive statistics. Probability spaces. Discrete random variables.
+Continuous random variables. Generation of random number. Elemental statistics.
+Applications.
+
+\subsubsection{Bibliography}
+Subsumed by the bibliography of Probability and Statistics [Mathematics].
+
+
+\hrulefill%------------------------------
+
+\subsection{Numerical Methods}
+Two group projects.
+
+\subsubsection{Objectives}
+Give the basic tools for the treatment of numeric problems. Study
+the most important numerical methods and their computational implementations.
+
+\subsubsection{Contents}
+Rounding error. Numerical representations. Solving non linear systems.
+Interpolation and polynomial approximation. Least squares. Numerical
+differentiation and integration. Ordinary differential equations. Solving
+linear systems: direct methods and iterative methods. Eigenvalues and eigenvectors.
+
+\subsubsection{Bibliography}
+\begin{itemize}
+  \item Watkins. Fundamentals of matrix computations.\\
+    Complete.
+  \item Course notes.
+\end{itemize}
+
+
+\hrulefill%------------------------------
+
+\subsection{Algorithms and Data Structures I}
+Three group projects.
+
+\subsubsection{Objectives}
+Present tools to solve problems about sequences and lists. Formally prove
+the correctness of programs. Make small projects to apply the learned
+tools.
+
+\subsubsection{Contents}
+Specification and implementation of programs. Correctness of programs. Types.
+Abstract types. Treatment of sequences and lists. Sequential files.
+
+\subsubsection{Bibliography}
+\begin{itemize}
+  \item Course notes.
+\end{itemize}
+
+
+\hrulefill%------------------------------
+
+\subsection{Algorithms and Data Structures II}
+Three group projects.
+
+\subsubsection{Objectives}
+Introduce abstract recursive data types. Present specification tools.
+Present techniques of analysis and design of algorithms. Proof the correctness
+of the constructed programs. Implement the learned techniques in projects.
+Analyze time and space complexity of various algorithms.
+
+\subsubsection{Contents}
+Recursion. Examples of abstract types, lists, queues, dictionaries,
+trees, graphs,\ldots. Methodologies of formal specification.
+Formal specifications and implementation of these types using various
+data structures. Basics on time and space complexity.
+
+\subsubsection{Bibliography}
+\begin{itemize}
+  \item Cormen, Leiserson, Rivest and Stein. Introduction to Algorithms. 3 ed.\\
+    Chapters $1$ to $5$ of Part I. Parts II and III.
+  \item Course notes.
+\end{itemize}
+
+
+\hrulefill%------------------------------
+
+\subsection{Algorithms and Data Structures III}
+Three group projects.
+
+\subsubsection{Objectives}
+Introduce the notion of graph. Implement using graphs various types
+of abstraction. Present the notion of exponential time algorithms,
+approximate solutions and various heuristics. Apply the learned concepts
+in various projects.
+
+\subsubsection{Contents}
+Graphs. Basic topics in graph theory. Solving problems using graphs.
+Basic topics in complexity theory. Recurrence. Heuristic solutions.
+
+\subsubsection{Bibliography}
+\begin{itemize}
+  \item Cormen, Leiserson, Rivest and Stein. Introduction to Algorithms. 3 ed.\\
+    Parts IV and VI.
+  \item Course notes.
+\end{itemize}
+
+
+\hrulefill%------------------------------
+
+\subsection{Paradigms of Programming Languages}
+Three group projects.
+
+\subsubsection{Objectives}
+Evaluate the concepts of programming language in terms of its contribution
+to the developing of software.
+
+\subsubsection{Contents}
+The imperative paradigm. The functional paradigm. The logic paradigm.
+The equational paradigm. Elements for the evaluation of languages.
+
+\subsubsection{Bibliography}
+\begin{itemize}
+  \item Pierce. Types and Programming Languages.
+    Part II. And chapter $15$ of Part III.
+  \item Lloyd. Foundations of Logic Programming.
+    Chapters $1$ and $2$.
+  \item Course notes.
+\end{itemize}
+
+
+\hrulefill%------------------------------
+
+\subsection{Computer Architecture I}
+Two group projects.
+
+\subsubsection{Objectives}
+Understand the components in a computational system, their interaction and
+operation, abstracted by Von Neumann.
+
+\subsubsection{Contents}
+Representation of information. Components in a classical computational system.
+Languages. Microprogramming.
+
+\subsubsection{Bibliography}
+\begin{itemize}
+  \item Stallings. Computer Organization and Architecture.\\
+    Part Two.
+  \item Course notes.
+\end{itemize}
+
+
+\hrulefill%------------------------------
+
+\subsection{Computer Architecture II}
+One individual project and two group projects.
+
+\subsubsection{Objectives}
+Develop projects to experiment with various computational systems.
+
+\subsubsection{Contents}
+Programming using microinstructions. Program interactions between various
+components of the system. Study a particular implementation of assembly language.
+Program a microkernell using INTEL assembly and C.
+
+\subsubsection{Bibliography}
+\begin{itemize}
+  \item Course notes.
+  \item Tom Shamley. The Unabridged Pentium $4$. IA32 Processor Genealogy, MindShare, INC. Addison-Wesley.\\
+    Used as a reference book.
+\end{itemize}
+
+
+\hrulefill%------------------------------
+
+\subsection{Operating Systems}
+Three group projects.
+
+\subsubsection{Objectives}
+Introduce the main functionalities of an operating system. Present the interrelation
+between operating system and the computer architecture.
+
+\subsubsection{Contents}
+Operating Systems. Components and functions. Administration of the various components
+of the system. Concurrent and distributed processes.
+
+\subsubsection{Bibliography}
+\begin{itemize}
+  \item Tanenbaum. Modern Operating Systems.\\
+    Chapters $1$ to $6$ and $9$.
+  \item Course notes.
+\end{itemize}
+
+
+\hrulefill%------------------------------
+
+\subsection{Communication Theory}
+Three group projects.
+
+\subsubsection{Objectives}
+Give the knowledge needed to understand the principles of transmission
+and manipulation of information. Study the design of information networks.
+
+\subsubsection{Contents}
+Information theory. Coding of information. Transmission mediums. Bandwidth and
+capacity. Fourier analysis. Modems. Multiplexers. Queue Theory. Protocols.
+
+\subsubsection{Bibliography}
+\begin{itemize}
+  \item Peterson. Computer Networks: A System Approach.\\
+    Complete.
+  \item Course notes.
+\end{itemize}
+
+
+\hrulefill%------------------------------
+
+\subsection{Language Theory}
+One group project.
+
+\subsubsection{Objectives}
+Present the notion of formal languages, syntax and semantics of languages,
+with compilers in mind.
+
+\subsubsection{Contents}
+Formal languages. Syntax and semantic of programming languages. Construction
+of some simple compilers.
+
+\subsubsection{Bibliography}
+\begin{itemize}
+  \item Hopcroft, Ullman. Introduction to Automata Theory, Languages, and
+    Computation.\\
+    Chapters $1$ to $7$.
+  \item Aho, Sethi, Ullman. Compilers: Principles, Techniques, and Tools.\\
+    Used as a reference book for one of the projects.
+  \item Course notes.
+\end{itemize}
+
+
+\hrulefill%------------------------------
+
+\subsection{Software Engineering I}
+Two group projects.
+
+\subsubsection{Objectives}
+Present and practice traditional techniques of Software Engineering and
+design, to be able to cope with complex systems.
+
+\subsubsection{Contents}
+Planning of software projects. Requirements analysis. Specification.
+Design. Studying software quality: correctness, trustworthiness.
+Strategies of software verification. Maintenance. Metrics. Cost computation.
+CASE tools.
+
+\subsubsection{Bibliography}
+\begin{itemize}
+  \item Axel van Lamsweerde. Requirements Engineering: From System Goals to UML Models to
+    Software Specifications. Wiley $2009$.\\
+    Chapters $1$, $7$, $8$. Chapters $10$ to $17$.
+  \item Course notes.
+\end{itemize}
+
+
+\hrulefill%------------------------------
+
+\subsection{Software Engineering II}
+Two group projects.
+
+\subsubsection{Objectives}
+Present and practice traditional techniques of software engineering and
+design, to be able to cope with complex systems.
+
+\subsubsection{Contents}
+Techniques of object oriented software engineering. Fast prototyping.
+Exercise the planning and management of software projects.
+
+\subsubsection{Bibliography}
+\begin{itemize}
+  \item Gamma, Helm, Johnson, Vlissides. Design Patterns - Elements of Reusable
+    Objet-Oriented Software.\\
+    Chapter $1$. Chapters $3$ to $6$.
+  \item Course notes.
+\end{itemize}
+
+
+\hrulefill%------------------------------
+
+\subsection{Databases}
+Three group projects.
+
+\subsubsection{Objectives}
+Extend the concept of data structure to the requirements involved in the solving
+of complex problems.
+
+\subsubsection{Contents}
+Functionalities of Database systems. Models of data. Query languages.
+Design of Databases. Physical data structures. Query optimization. Concurrence
+and recovering. Implementations.
+
+\subsubsection{Bibliography}
+\begin{itemize}
+  \item Ullman. Principles of Database and Knowledge Base Systems.\\
+  \item Course notes.
+
+\end{itemize}
+
+\hrulefill%------------------------------
+
+\section{Department of Computer Science -- elective courses}
+
+\subsection{Modal Logic}
+No projects.
+
+\begin{itemize}
+  \item Formulas. Induction principle. Recursive definitions. Subformulas. Substitution.
+  \item Classical, regular and normal logics. Axiomatizable and recursively axiomatizable
+    logics. Deductibility. Consistence. The K logic. Tautologic consequence.
+  \item Frames. Models. The logic of a class of frames. Completeness. Correctness. Subframes
+    and submodels generated by indexes. Strong and weak consequence.
+  \item Properties of relations. Correspondence between modal formulas and properties of
+    relations. Correspondence between modal formulas and first and second order formulas.
+  \item Sets of consistent formulas and L-consistent formulas. Canonical models.
+    Completeness of modal logics. Existence theorems of models and frames.
+  \item The property of finite models and the property of finite frames. Decidability from
+    the property of finite frames.
+\end{itemize}
+
+\subsubsection{Bibliography}
+\begin{itemize}
+  \item Ram\'on Jansana. Una Introduccion a la L\'ogica Modal.\\
+    Chapters $1$ to $7$.
+\end{itemize}
+
+
+\hrulefill%------------------------------
+
+\subsection{Positional Games}
+No projects.
+
+\begin{itemize}
+  \item
+Positional games, examples. Different sets of rules. Tic-Tac-Toe, generalizations. Hex.
+  \item
+Strong games, pairing draw. Maker-Breaker games. Biased games, threshold bias. General tools.
+  \item
+Standard games on graphs – Connectivity game, Degree game, Hamilton Cycle game. Games with non-spanning winning sets, Clique game, Planarity game, Colorability game.
+  \item
+Avoider-Enforcer games, two variants of rules, threshold biases. Standard games on graphs.
+  \item
+Winning fast, implications in strong games.
+  \item
+Games on sparse graphs, variations. Games on random boards.
+  \item
+Neighborhood conjecture and related problems.
+\end{itemize}
+
+\subsubsection{Bibliography}
+\begin{itemize}
+  \item Handouts that were parts of the book: Hefetz, Krivelevich, Stojakovic, Szabo. Positional Games.\\
+    Parts of chapters $1$ to $4$.
+\end{itemize}
+
+\hrulefill%------------------------------
+
+\subsection{Interactive Theorem Proving: theory and practice}
+One group project.
+
+\begin{itemize}
+  \item
+    Brief presentation of Proof Theory and Coq.
+
+  \item
+    Propositional Calculus based on natural deduction. Rules, examples and basic theorems. Proving
+    propositional theorems in Coq.
+
+  \item
+    Lambda Calculus. Curry-Howard correspondence. Inspection of proof terms.
+
+  \item
+    First Order Calculus based on natural deduction. Rules, examples and basic theorems.
+    Proving first order theorems in Coq.
+
+  \item
+    Inductive Types and structural induction.
+
+  \item
+    Fixed points and its relation to structural induction.
+
+  \item
+    Lambda Calculus with fixed points. Non termination and inconsistency.
+
+  \item
+    Proof automation: proof search, Ltac, typed automation.
+
+\end{itemize}
+
+\subsubsection{Bibliography}
+\begin{itemize}
+  \item Y. Bertot and P. Cast\'eran: Interactive Theorem Proving and Program Development, Springer, 1998.\\
+    Chapters $1$ to $4$ and $6$ to $8$.
+
+  \item Benjamin C. Pierce. Software Foundations.\\
+    In the lab we made exercises from this book. Chapters: Basics, Induction, Lists, MoreCoq.
+
+  \item Course handouts.
+
+\end{itemize}
+\hrulefill%------------------------------
+
+\subsection{Operations Research}
+One individual project.
+
+\subsubsection{Objectives}
+Lots problems in Combinatorial Optimization can be modeled as lineal programming problems.
+Many of these problems are difficult to solve exactly.
+The purpose of this course is learn to formulate models and study the methods
+for solving a big variety of optimization problems that can be modeled as
+integer and linear programming problems.
+
+\subsubsection{Contents}
+\begin{itemize}
+    \item Linear Programming.
+    \item Convex sets and functions. Polyhedra and cones. Convex hull. Basic lemmas and theorems.
+    \item Simplex Method. Convergence. Complexity. Dual problem. Dual theorems.
+    \item Examples of Integer Programming problems. Good and bad formulations.
+    \item Characterizations of the convex hull of an Integer Programming problem. Classical inequalities.
+    \item Algorithms for the resolution of Integer Programming problems. Branch and Bound. Branch and Cut.
+      Usage and experimentation with CPLEX. Small project in CPLEX.
+\end{itemize}
+
+\subsubsection{Bibliography}
+\begin{itemize}
+  \item Chvatal. Linear Programming.\\
+    Part I.
+  \item Nemhauser. Integer and Combinatorial Optimization.\\
+    Used as a reference book.
+\end{itemize}
+
+
+
+\end{document}
